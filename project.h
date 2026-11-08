@@ -28,7 +28,7 @@ bool posix_kbhit();
 #define _stricmp strcasecmp
 #define _strdup strdup
 #define strcpy_s(dst, sz, src) strcpy(dst, src)
-#define Sleep sleep
+#define Sleep(ms) usleep((ms) * 1000)
 #define getch() getchar()
 #define _kbhit posix_kbhit
 

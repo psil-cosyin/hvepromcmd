@@ -946,6 +946,7 @@ static bool target_test(port_handle_t port, shield_type_t shield_type)
                     (data & 0x40) == 0x40 ? 'H' : 'L',
                     (data & 0x80) == 0x80 ? 'H' : 'L',
                     6);
+                fflush(stdout);
 
                 break;
             }
